@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="pt"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Desafio concrete!" content="">
+    <meta name="Edson Luiz Fragnan" content="">
+    <title>Desafio Concrete!</title>
+    <!-- Bootstrap CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="minhas_implementacoes/css/css.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Intanciando as bibliotecas Jquery, Underscore e Backbone --> 
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="minhas_implementacoes/js/index.js"></script>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-12 banner">
+          <h4>Shots mais vistos do Dribbble </h4>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-12">
+          <div ng-app="app" ng-controller="ctrl">
+            <div id="list" class="clearfix">
+              <a target="_blank" ng-href="{{s.html_url}}" ng-repeat="s in shots" class="funcaoBotao">
+                <img ng-src="{{s.images.normal}}" class="imagem" />
+                <div class="corP">
+                  <h4>{{s.title}}</h4>
+                  <div class="descricao">{{s.description}}</div>
+                </div>
+              </a>
+            </div>
+            <div class="appConcrete">APP Concrete Consulta Dribbble API @ <a href="http://developer.dribbble.com/">developer.dribbble.com</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script type="text/javascript">
+      var tags = document.getElementsByClassName("descricao");
+      console.log(tags);
+
+      /*for (var desc in tags) {
+        var resp = tags[desc];
+        console.log(resp);
+        //tags[0].replace(/"<.*?>"/g, '');
+      }*/
+      
+    </script>
+  </body>
+</html>
+
+
+

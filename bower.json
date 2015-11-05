@@ -1,0 +1,21 @@
+{
+  "name": "desafio_Front_End_Concrete",
+  "authors": [
+    "Edson Luiz Fragnan <edsonl.fragnan@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies":{
+    "bootstrap": "~3.2.0"
+  }
+}

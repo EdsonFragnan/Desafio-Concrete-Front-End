@@ -1,0 +1,66 @@
+body{
+	background: #000;
+}
+
+.a{
+	text-decoration:none; 
+}
+
+.banner{
+	color: #C0C0C0;
+}
+
+.imagem{
+	position: relative;
+}
+
+.funcaoBotao{
+	pointer-events: none;
+}
+
+.corP{
+	background: #FFF;
+	padding: 50px;
+	width: 400px;
+	margin-left: 17px;
+	margin-top: -17px;
+	text-align: justify;
+}
+
+.clearfix{
+	position:absolute;
+	margin-top: 30px;
+	left:40%;
+	margin-left:-50px;
+}
+
+.clearfix a img{
+	margin: 17px; 
+	margin-top: 20px;
+}
+
+.appConcrete{
+	float: left;
+}
+
+.appConcrete a{
+	padding-top: 100px;
+	color: #FFF;	
+}
+
+@media screen and (max-width: 480px) {
+	.clearfix{
+		position:absolute;
+		top:100%;
+		left:13% !important;
+		margin-top:30px;
+		margin-left:-50px;
+	}
+
+	.clearfix a img{
+		margin: 17px; 
+		margin-top: 20px !important;
+	}
+}
+
+
