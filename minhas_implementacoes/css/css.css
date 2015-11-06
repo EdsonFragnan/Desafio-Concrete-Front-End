@@ -14,8 +14,8 @@ body{
 	position: relative;
 }
 
-.funcaoBotao{
-	pointer-events: none;
+.descricao{
+	font-size: 11px !important;
 }
 
 .corP{
@@ -28,7 +28,7 @@ body{
 }
 
 .clearfix{
-	position:absolute;
+	position:relative;
 	margin-top: 30px;
 	left:40%;
 	margin-left:-50px;
@@ -39,18 +39,14 @@ body{
 	margin-top: 20px;
 }
 
-.appConcrete{
-	float: left;
-}
-
-.appConcrete a{
+footer .appConcrete a{
 	padding-top: 100px;
 	color: #FFF;	
 }
 
 @media screen and (max-width: 480px) {
 	.clearfix{
-		position:absolute;
+		position:relative;
 		top:100%;
 		left:13% !important;
 		margin-top:30px;
