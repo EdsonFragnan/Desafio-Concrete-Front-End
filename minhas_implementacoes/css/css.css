@@ -2,6 +2,15 @@ body{
 	background: #000;
 }
 
+.tituloPage {
+	padding: 20px !important;
+}
+
+.linha {
+	color: #C0C0C0;
+}
+
+
 .a{
 	text-decoration:none; 
 }
@@ -40,6 +49,7 @@ body{
 }
 
 footer .appConcrete a{
+	margin-top: 30px;
 	padding-top: 100px;
 	color: #FFF;	
 }
@@ -51,6 +61,10 @@ footer .appConcrete a{
 		left:13% !important;
 		margin-top:30px;
 		margin-left:-50px;
+	}
+
+	.tituloPage {
+		margin-top: 30px;
 	}
 
 	.clearfix a img{
