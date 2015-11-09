@@ -3,13 +3,8 @@ body{
 }
 
 .tituloPage {
-	padding: 20px !important;
+	text-align: center;
 }
-
-.linha {
-	color: #C0C0C0;
-}
-
 
 .a{
 	text-decoration:none; 
@@ -27,25 +22,57 @@ body{
 	font-size: 11px !important;
 }
 
+.btn{
+	background: #FFF;
+	width: 50px;
+	height: 50px;
+	margin-left: 17px;
+	border-radius: 0px !important; 
+}
+
+.btn .glyphicon{
+	color: #000;
+	font-size: 20px;
+	margin-top: 5px;
+}
+
 .corP{
 	background: #FFF;
 	padding: 50px;
 	width: 400px;
 	margin-left: 17px;
 	margin-top: -17px;
-	text-align: justify;
+}
+
+.criador .nome{
+	margin-left: 120px;
+	margin-top: -70px;
+	padding-bottom: 50px;
+}
+.avatar{
+	border-radius:50px;
+	width: 100px;
+	height: 100px;
+	margin-left: 0px !important;
 }
 
 .clearfix{
-	position:relative;
-	margin-top: 30px;
-	left:40%;
-	margin-left:-50px;
-}
+	margin-top: 20px;
+    margin-left:437px;
+    width: 400px;
+    top:50%; 
+    left:25%;
+}        
 
 .clearfix a img{
 	margin: 17px; 
 	margin-top: 20px;
+}
+
+footer .appConcrete {
+	margin-top: 20px;
+	margin-left: 20px;
+	text-align: center;
 }
 
 footer .appConcrete a{
@@ -53,14 +80,123 @@ footer .appConcrete a{
 	padding-top: 100px;
 	color: #FFF;	
 }
+ 
+/* tables em formato porta retrato até os desktos no formato paisagem */
+@media (min-width: 768px) and (max-width: 979px) { 
+	.tituloPage{
+		text-align: center;
+	}
 
-@media screen and (max-width: 480px) {
 	.clearfix{
-		position:relative;
-		top:100%;
-		left:13% !important;
-		margin-top:30px;
-		margin-left:-50px;
+		margin-top:20px;
+		margin-left:244px !important;
+	}
+		
+	.tituloPage {
+		margin-top: 30px;
+	}
+
+	.criador .nome{
+		margin-left: 120px;
+		margin-top: -70px;
+		padding-bottom: 50px;
+	}
+
+	.avatar{
+		border-radius:50px;
+		width: 100px;
+		height: 100px;
+		margin-left: 0px !important;
+	}
+
+
+	.clearfix a img{
+		margin: 17px; 
+		margin-top: 20px !important;
+	}
+
+	footer .appConcrete {
+		margin-top: 20px;
+		text-align: center;	
+	}
+}
+ 
+/* dispositivo em paisagem até os tablets em formato porta-retrato */
+@media (max-width: 767px) { 
+	.tituloPage{
+		text-align: center;
+	}
+
+	.clearfix{
+		margin-top:20px;
+		margin-left:60px !important;
+	}
+		
+	.tituloPage {
+		margin-top: 30px;
+	}
+
+	.criador .nome{
+		margin-left: 120px;
+		margin-top: -70px;
+		padding-bottom: 50px;
+	}
+
+	.avatar{
+		border-radius:50px;
+		width: 100px;
+		height: 100px;
+		margin-left: 0px !important;
+	}
+
+	.clearfix a img{
+		margin: 17px; 
+		margin-top: 20px !important;
+	}
+
+	footer .appConcrete {
+		margin-top: 20px;
+		text-align: center;	
+	}
+}
+
+
+/* dispositivo no formato paisagem e abaixos */
+@media (max-width: 480px) { 
+	.tituloPage{
+		text-align: center;
+	}
+
+	.clearfix{
+		width: 240px;
+		margin-top:20px;
+		margin-left:15px !important;
+	}
+
+	.imagem{
+		width: 240px;
+	}
+
+	.criador .nome{
+ 		margin-left: 0px;
+		text-align: center;
+		margin-top: 0px;
+		padding-bottom: 50px;
+	}
+
+	.avatar{
+		border-radius:50px;
+		width: 100px;
+		height: 100px;
+		margin-left: 22px !important;
+	}
+
+	.corP {
+    	background: #FFF;
+    	padding: 50px;
+    	width: 240px;
+    	margin-left: 17px;
+    	margin-top: -17px;
 	}
 
 	.tituloPage {
@@ -71,6 +207,10 @@ footer .appConcrete a{
 		margin: 17px; 
 		margin-top: 20px !important;
 	}
-}
 
+	footer .appConcrete {
+		margin-top: 20px;
+		text-align: center;	
+	}
+}
 

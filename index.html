@@ -17,17 +17,20 @@
     <script src="minhas_implementacoes/js/index.js"></script>
 
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-12 banner">
+      <div class="row-fluid">
+        <div class="col-xs-12 col-sm-12 col-md-12 banner">
           <h4 class="tituloPage">Shots mais vistos do Dribbble </h4>
-          <hr class="linha" />
         </div>
         <div class="col-xs-12 col-sm-8 col-md-12">
           <div ng-app="app" ng-controller="controllerAPP">
             <div id="list" class="clearfix" ng-repeat="s in shots">
-              <a target="_blank" ng-href="{{s.objetoMontado.url}}" class="funcaoBotao">
+              <a target="_blank" ng-href="{{s.objetoMontado.url}}" >
                 <img ng-src="{{s.objetoMontado.imagem}}" class="imagem" />
                 <div class="corP">
+                  <div class="criador">
+                    <img ng-src="{{s.objetoMontado.avatar}}" class="avatar" />
+                    <p class="nome">{{s.objetoMontado.nome}}</p>
+                  </div>
                   <h4>{{s.objetoMontado.titulo}}</h4>
                   <div class="descricao">{{s.objetoMontado.descricao}}</div>
                 </div>
@@ -39,7 +42,6 @@
     </div>
 
     <footer>
-      <hr class="linha" />
       <div class="appConcrete">APP Concrete Consulta Dribbble API @ <a href="http://developer.dribbble.com/">developer.dribbble.com</a></div>
     </footer>
     <!-- Bootstrap JavaScript -->
