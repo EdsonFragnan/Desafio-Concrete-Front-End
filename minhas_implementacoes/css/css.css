@@ -58,10 +58,10 @@ body{
 
 .clearfix{
 	margin-top: 20px;
-    margin-left:437px;
+    margin-left:-200px;
     width: 400px;
-    top:50%; 
-    left:25%;
+    left:50%;
+    position: relative;
 }        
 
 .clearfix a img{
@@ -128,8 +128,11 @@ footer .appConcrete a{
 	}
 
 	.clearfix{
-		margin-top:20px;
-		margin-left:60px !important;
+		margin-top: 20px;
+	    margin-left:-200px;
+	    width: 400px;
+	    left:50%;
+	    position: relative;
 	}
 		
 	.tituloPage {
@@ -168,10 +171,12 @@ footer .appConcrete a{
 	}
 
 	.clearfix{
-		width: 240px;
-		margin-top:20px;
-		margin-left:15px !important;
-	}
+		margin-top: 20px;
+	    margin-left:-135px;
+	    width: 240px;
+	    left:50%;
+	    position: relative;
+		}
 
 	.imagem{
 		width: 240px;
