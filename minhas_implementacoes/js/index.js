@@ -12,6 +12,7 @@ app.controller('controllerAPP', function($scope, $http) {
     if($scope.options.sort) url += '&sort='+$scope.options.sort;
     $http.get(url).success(function(data) {
       for(var texto in data){
+        console.log(data);
         var descricaoTratado = tratamento(data[texto].description);
         var objeto = {
           url: data[texto].html_url,
@@ -19,7 +20,8 @@ app.controller('controllerAPP', function($scope, $http) {
           descricao: descricaoTratado,
           titulo: data[texto].title,
           avatar: data[texto].user.avatar_url,
-          nome: data[texto].user.name 
+          nome: data[texto].user.name, 
+          id: data[texto].id
         };
         $scope.shots.push({
           objetoMontado: objeto

@@ -22,11 +22,11 @@
           <h4 class="tituloPage">Shots mais vistos do Dribbble </h4>
         </div>
         <div class="col-xs-12 col-sm-8 col-md-12">
-          <div ng-app="app" ng-controller="controllerAPP">
+          <div div="app" ng-app="app" ng-controller="controllerAPP">
             <div id="list" class="clearfix" ng-repeat="s in shots">
               <a target="_blank" ng-href="{{s.objetoMontado.url}}" >
                 <img ng-src="{{s.objetoMontado.imagem}}" class="imagem" />
-                <div class="corP">
+                <div class="corP collapse-group" id="{{s.objetoMontado.id}}">
                   <div class="criador">
                     <img ng-src="{{s.objetoMontado.avatar}}" class="avatar" />
                     <p class="nome">{{s.objetoMontado.nome}}</p>
@@ -35,10 +35,12 @@
                   <div class="descricao">{{s.objetoMontado.descricao}}</div>
                 </div>
               </a>
+              <a class="glyphicon glyphicon-plus" role="button" data-toggle="collapse" href="#{{s.objetoMontado.id}}" aria-expanded="false" aria-controls="collapseDetalhe"></a>
             </div>
           </div>
         </div>
       </div>
+      <span id="click" type="button" class="glyphicon glyphicon-arrow-up"></span>
     </div>
 
     <footer>
@@ -46,6 +48,15 @@
     </footer>
     <!-- Bootstrap JavaScript -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function (){
+        $("#click").click(function (){
+          $('html, body').animate({
+            scrollTop: $("html").offset().top
+          }, 2000);
+        });
+      });
+    </script>
   </body>
 </html>
 
