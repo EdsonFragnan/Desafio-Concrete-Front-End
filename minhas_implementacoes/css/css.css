@@ -10,20 +10,52 @@ body{
 	display:none;
 }
 
-.glyphicon-plus{
-	font-size:30px;
-	width:50px;
-	height:50px;
+.dados .glyphicon-plus{
+	font-size:30px !important;
 	background: #FFF;
 	padding: 10px;
-    margin-top: -18px;
-    margin-left: 17px;
     color: #000;
 }
 
-.glyphicon-plus:link{ 
- 	text-decoration:none; 
-} 
+.dados{
+	color: #000;
+	font-size: 15px;
+	background: #FFF;
+	width: 400px;
+	height: 50px;
+	margin-top: -17px;
+    margin-left: 17px;
+    padding-top: 13px;
+    padding: 18px;
+}
+
+.iconsDados{
+	float: right;
+	margin-right: 10px;
+}
+
+.dados .glyphicon{
+	padding-left: 5px; 
+	margin-top: -40px;
+	font-size: 15px;
+	margin-left: 10px;
+}
+
+.iconStatus{
+	padding-left: 10px;
+	margin-top: -2px;
+	float: right;
+}
+
+.detalhes{
+	text-decoration:none; 
+	color: #000;
+	padding-left: 10px;
+}
+
+.detalheTexto{
+	padding-left: 10px;
+}
 
 .a{
 	text-decoration:none; 
@@ -141,6 +173,8 @@ footer .appConcrete a{
 	}
 
 
+
+
 	.clearfix a img{
 		margin: 17px; 
 		margin-top: 20px !important;
@@ -225,6 +259,17 @@ footer .appConcrete a{
 		width: 100px;
 		height: 100px;
 		margin-left: 22px !important;
+	}
+
+	.dados{
+		color: #000;
+		font-size: 15px;
+		background: #FFF;
+		width: 240px;
+		height: 50px;
+		margin-top: -17px;
+	    margin-left: 17px;
+	    padding-top: 13px;
 	}
 
 	.corP {

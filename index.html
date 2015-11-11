@@ -26,6 +26,14 @@
             <div id="list" class="clearfix" ng-repeat="s in shots">
               <a target="_blank" ng-href="{{s.objetoMontado.url}}" >
                 <img ng-src="{{s.objetoMontado.imagem}}" class="imagem" />
+               <div class="dados">
+                <a class="detalhes" role="button" data-toggle="collapse" href="#{{s.objetoMontado.id}}" aria-expanded="false" aria-controls="collapseDetalhe"><span class="glyphicon glyphicon-folder-open"></span><span class="detalheTexto">Detalhes</span></a>
+                <div class="iconsDados">
+                  <span class="glyphicon glyphicon-eye-open" aria-hidden="true"><span class="iconStatus">{{s.objetoMontado.views}}</span></span>
+                  <span class="glyphicon glyphicon-comment" aria-hidden="true"><span class="iconStatus">{{s.objetoMontado.comentario}}</span></span>
+                  <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"><span class="iconStatus">{{s.objetoMontado.likes}}</span></span>
+                  </div>
+                </div>
                 <div class="corP collapse-group" id="{{s.objetoMontado.id}}">
                   <div class="criador">
                     <img ng-src="{{s.objetoMontado.avatar}}" class="avatar" />
@@ -35,7 +43,6 @@
                   <div class="descricao">{{s.objetoMontado.descricao}}</div>
                 </div>
               </a>
-              <a class="glyphicon glyphicon-plus" role="button" data-toggle="collapse" href="#{{s.objetoMontado.id}}" aria-expanded="false" aria-controls="collapseDetalhe"></a>
             </div>
           </div>
         </div>
