@@ -3,6 +3,7 @@ body{
 }
 
 .tituloPage {
+	margin-top: 30px;
 	text-align: center;
 }
 
@@ -147,12 +148,13 @@ footer .appConcrete a{
 /* tables em formato porta retrato até os desktos no formato paisagem */
 @media (min-width: 768px) and (max-width: 979px) { 
 	.tituloPage{
+		margin-top: 30px;
 		text-align: center;
 	}
 
 	.clearfix{
 		margin-top:20px;
-		margin-left:244px !important;
+		margin-left:-85px !important;
 	}
 		
 	.tituloPage {
@@ -172,23 +174,35 @@ footer .appConcrete a{
 		margin-left: 0px !important;
 	}
 
-
-
-
 	.clearfix a img{
 		margin: 17px; 
 		margin-top: 20px !important;
 	}
+
+	#click{
+		font-size:30px;
+		width:50px;
+		height:50px;
+		background: #FFF;
+		padding: 9px;
+	    margin-top: 18px;
+	    margin-left: 17px;
+	    color: #000;
+	    cursor:pointer;
+	}
+
 
 	footer .appConcrete {
 		margin-top: 20px;
 		text-align: center;	
 	}
 }
- 
+
+
 /* dispositivo em paisagem até os tablets em formato porta-retrato */
 @media (max-width: 767px) { 
 	.tituloPage{
+		margin-top: 30px;
 		text-align: center;
 	}
 
@@ -220,6 +234,18 @@ footer .appConcrete a{
 	.clearfix a img{
 		margin: 17px; 
 		margin-top: 20px !important;
+	}
+
+	#click{
+		font-size:30px;
+		width:50px;
+		height:50px;
+		background: #FFF;
+		padding: 9px;
+	    margin-top: 18px;
+	    margin-left: 17px;
+	    color: #000;
+	    cursor:pointer;
 	}
 
 	footer .appConcrete {
